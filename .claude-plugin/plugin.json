@@ -10,5 +10,6 @@
   "license": "Apache-2.0",
   "icon": "./assets/logo.png",
   "homepage": "https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab",
-  "repository": "https://github.com/bitcompool/prompt-optimizer-claude-plugin"
+  "repository": "https://github.com/bitcompool/prompt-optimizer-claude-plugin",
+  "supportUrl": "https://forms.gle/XKFPvqxFdCRokBMW9"
 }
