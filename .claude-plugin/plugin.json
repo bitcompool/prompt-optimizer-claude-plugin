@@ -11,5 +11,7 @@
   "icon": "./assets/logo.png",
   "homepage": "https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab",
   "repository": "https://github.com/bitcompool/prompt-optimizer-claude-plugin",
-  "supportUrl": "https://forms.gle/XKFPvqxFdCRokBMW9"
+  "supportUrl": "https://forms.gle/XKFPvqxFdCRokBMW9",
+  "privacyPolicyUrl": "https://github.com/bitcompool/prompt-optimizer-claude-plugin/blob/main/PRIVACY.md",
+  "documentationUrl": "https://github.com/bitcompool/prompt-optimizer-claude-plugin/blob/main/README.md"
 }
