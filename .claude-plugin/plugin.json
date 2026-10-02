@@ -1,13 +1,22 @@
 {
   "name": "prompt-optimizer",
   "displayName": "Prompt Optimizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Optimize a draft prompt before you send it: rewrites it into a clearer, materially more useful prompt for another AI, in proportion to what the draft lacks. Returns one rewritten prompt; never runs the task.",
   "author": {
     "name": "Prompt Optimizer",
     "url": "https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab"
   },
   "license": "Apache-2.0",
+  "keywords": [
+    "prompt optimizer",
+    "prompt engineering",
+    "improve prompt",
+    "rewrite prompt",
+    "prompt improver",
+    "prompt enhancer",
+    "better prompts"
+  ],
   "icon": "./assets/logo.png",
   "homepage": "https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab",
   "repository": "https://github.com/bitcompool/prompt-optimizer-claude-plugin",
