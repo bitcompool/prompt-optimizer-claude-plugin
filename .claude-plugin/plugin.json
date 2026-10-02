@@ -1,8 +1,8 @@
 {
   "name": "prompt-optimizer",
   "displayName": "Prompt Optimizer",
-  "version": "1.1.0",
-  "description": "Turn a rough draft into a clear, ready-to-send prompt for any AI. Returns one improved prompt; never runs the task.",
+  "version": "1.1.1",
+  "description": "Turn a rough draft into a clear, ready-to-send prompt for any AI. Returns one improved prompt, and answers it only if you ask.",
   "author": {
     "name": "Prompt Optimizer",
     "url": "https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab"

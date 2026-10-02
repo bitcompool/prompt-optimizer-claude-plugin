@@ -3,7 +3,8 @@
 Turn a rough draft into a clear, ready-to-send prompt for any AI. Prompt
 Optimizer rewrites the prompt you already wrote for ChatGPT, Claude, Gemini or
 any other assistant, adds the structure, scope and output format it is
-missing, and hands it back without running it.
+missing, and hands it back. It answers the improved prompt only if you ask it
+to.
 
 ## Installation
 
@@ -91,8 +92,9 @@ More examples are in
   with stated assumptions and options, not with questions.
 - **Speaks your language.** The prompt comes back in the language of your
   draft.
-- **Never runs the task.** You get the prompt; what you send, and where, is up
-  to you.
+- **Rewrites first.** You get the prompt; what you send, and where, is up to
+  you. Ask "improve this prompt and then answer it" and you get the improved
+  prompt followed by the answer to it.
 
 The full rules are in
 [`skills/optimize/references/rewrite-rules.md`](skills/optimize/references/rewrite-rules.md).
