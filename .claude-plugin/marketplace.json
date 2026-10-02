@@ -1,0 +1,14 @@
+{
+  "name": "bitcompool",
+  "owner": {
+    "name": "bitcompool",
+    "url": "https://github.com/bitcompool"
+  },
+  "description": "Prompt Optimizer: turn a rough draft into a clear, ready-to-send prompt for any AI.",
+  "plugins": [
+    {
+      "name": "prompt-optimizer",
+      "source": "."
+    }
+  ]
+}

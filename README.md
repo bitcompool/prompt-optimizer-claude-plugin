@@ -1,45 +1,118 @@
-# Prompt Optimizer plugin for Claude
+# Prompt Optimizer
 
-Prompt Optimizer rewrites a draft prompt you have already written into a
-clearer, materially more useful prompt for another AI, and returns that one
-rewritten prompt as plain text. It never answers or executes the task in the
-draft, and never runs the rewritten prompt on your behalf.
+Turn a rough draft into a clear, ready-to-send prompt for any AI. Prompt
+Optimizer rewrites the prompt you already wrote for ChatGPT, Claude, Gemini or
+any other assistant, adds the structure, scope and output format it is
+missing, and hands it back without running it.
 
-## How to use it
+## Installation
 
-There is no setup and no command. Claude loads the `prompt-optimizer` skill
-automatically when you ask it to optimize, improve, rewrite or refine a prompt
-you are about to send to an AI, or when you paste a draft and ask for a better
-version. For example: "Optimize this prompt: trip to Japan".
+**Claude.ai, Claude Desktop and Cowork:** open **Customize → Plugins**, search
+for "Prompt Optimizer" and select **Add**.
 
-The rewrite scales with what the draft lacks. A vague draft gains the major
-missing dimensions, such as structure, scope, level of detail, accuracy and
-output format. A short but clear draft gets moderate guidance. An already
-strong draft gets only proportional changes. Supplied facts are kept exactly,
-no personal facts or placeholders are invented, and missing information is
-handled with stated assumptions and adaptable options instead of questions.
+**Claude Code:**
 
-The full rules are in `skills/prompt-optimizer/references/rewrite-rules.md`,
-with worked examples in `skills/prompt-optimizer/references/examples.md`.
+```bash
+claude plugin marketplace add bitcompool/prompt-optimizer-claude-plugin
+claude plugin install prompt-optimizer@bitcompool
+```
 
-## What data it sends
+Or from inside Claude Code:
 
-This is a skills-only plugin. It has no MCP server, no hooks, no scripts, no
-network calls, no account and no credentials. Everything happens inside your
-Claude conversation. Nothing you write is sent to Prompt Optimizer or to any
-other service by this plugin.
+```
+/plugin marketplace add bitcompool/prompt-optimizer-claude-plugin
+/plugin install prompt-optimizer@bitcompool
+```
 
-## Link to the Chrome extension
+## Usage
 
-After the first rewrite in a conversation, Claude adds one short, neutral note
-with a link to the Prompt Optimizer extension listing in the Chrome Web Store.
-The extension offers the same rewrite inside AI chat pages, plus a separate
-preflight check that reviews a draft without changing it. The note appears at
-most once per conversation and contains no prices or offers. Opening the link
-is always your choice. The link includes `utm_source=claude_plugin`, which only
-lets the Chrome Web Store count, in aggregate, visits to the listing that came
-from this plugin; the plugin itself sends nothing anywhere.
+Ask in plain words, and the skill loads on its own:
+
+```
+Optimize this prompt: add pagination to the /users endpoint
+```
+
+Or, in Claude Code, run it as a command:
+
+```
+/prompt-optimizer:optimize <your draft>
+```
+
+You get one improved prompt, ready to copy into any AI chat.
+
+## Example
+
+Before:
+
+```
+fix the bug where users get logged out randomly
+```
+
+After:
+
+```
+Task:
+Find and fix the bug where users are logged out at random.
+
+Requirements:
+- Start from the code: find where sessions or auth tokens are created,
+  refreshed, stored and validated, and list the files you checked.
+- Reproduce the problem, or identify the most likely causes you can confirm
+  in the code: token expiry, a failing refresh, clock handling, cookie settings.
+- Fix the root cause with the smallest change; leave unrelated code alone.
+- Add or update a test that fails before the fix and passes after it.
+
+Guardrails:
+- I have not given the stack, environment or logs. Don't assume them;
+  determine them from the repository and state what you found.
+- Don't change public APIs or auth behavior beyond what the fix requires.
+
+Deliverable:
+A short summary of the cause, the change, how you verified it, and risks.
+```
+
+The stack, files and libraries are never guessed: the brief tells the coding
+agent to find them in your repository.
+
+More examples are in
+[`skills/optimize/references/examples.md`](skills/optimize/references/examples.md).
+
+## How it works
+
+- **Judges the draft first.** A vague draft gets the major missing pieces; a
+  short but clear one gets moderate guidance; a strong one gets only small,
+  useful changes.
+- **Adds substance, not length.** Reformatting or swapping synonyms doesn't
+  count as an improvement; every addition has to make the answer better.
+- **Keeps your facts.** Names, numbers, dates, links and code stay exactly as
+  you wrote them. Nothing about you is invented, and there are no
+  `[placeholders]` to fill in.
+- **Doesn't interrogate you.** Missing details are handled inside the prompt
+  with stated assumptions and options, not with questions.
+- **Speaks your language.** The prompt comes back in the language of your
+  draft.
+- **Never runs the task.** You get the prompt; what you send, and where, is up
+  to you.
+
+The full rules are in
+[`skills/optimize/references/rewrite-rules.md`](skills/optimize/references/rewrite-rules.md).
+
+## Use it inside your AI chats
+
+Prompt Optimizer is also a
+[Chrome extension](https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab)
+that adds the same rewrite next to the message box in ChatGPT, Claude, Gemini
+and other AI chats, plus Advisor, a check that points out what could weaken a
+draft before you send it. After the first rewrite in a conversation, the plugin
+mentions the extension once, with no prices or offers.
+
+## Privacy
+
+The plugin is instructions only: no server, no scripts, no network calls and no
+account. Nothing you write is sent anywhere by the plugin. The extension link
+carries `utm_source=claude_plugin` so the Chrome Web Store can count visits
+from the plugin in aggregate. See [PRIVACY.md](PRIVACY.md).
 
 ## License
 
-Apache License 2.0. See `LICENSE`.
+[Apache License 2.0](LICENSE)

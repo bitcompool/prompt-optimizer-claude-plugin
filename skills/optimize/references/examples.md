@@ -33,6 +33,33 @@ Guardrails:
 Deliverable:
 A day-by-day itinerary for each option, followed by a short comparison of the options and practical booking tips.
 
+## Vague coding task: agent-ready brief
+
+Draft:
+
+fix the bug where users get logged out randomly
+
+Not acceptable: naming a framework, file, auth library or token lifetime the
+user never mentioned, or returning "Fix the random logout bug. Be thorough."
+
+Rewritten prompt:
+
+Task:
+Find and fix the bug where users are logged out at random.
+
+Requirements:
+- Start from the code: find where sessions or auth tokens are created, refreshed, stored and validated, and list the files you checked.
+- Reproduce the problem, or identify the most likely causes you can confirm in the code, such as token expiry, a failing refresh, clock or timezone handling, or cookie and storage settings.
+- Fix the root cause with the smallest change that solves it; leave unrelated code alone.
+- Add or update a test that fails before the fix and passes after it.
+
+Guardrails:
+- I have not given the stack, environment or logs. Do not assume them; determine them from the repository and state what you found.
+- Do not change public APIs or authentication behavior beyond what the fix requires.
+
+Deliverable:
+A short summary of the cause, the change, how you verified it, and any remaining risks.
+
 ## Short but understandable draft: moderate guidance
 
 Draft:
