@@ -112,8 +112,8 @@ mentions the extension once, with no prices or offers.
 
 The plugin is instructions only: no server, no scripts, no network calls and no
 account. Nothing you write is sent anywhere by the plugin. The extension link
-carries `utm_source=claude_plugin` so the Chrome Web Store can count visits
-from the plugin in aggregate. See [PRIVACY.md](PRIVACY.md).
+is a plain Chrome Web Store link with no tracking parameters. See
+[PRIVACY.md](PRIVACY.md).
 
 ## License
 

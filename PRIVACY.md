@@ -1,6 +1,6 @@
 # Privacy policy: Prompt Optimizer plugin for Claude
 
-Last updated: 30 September 2026
+Last updated: 2 October 2026
 
 This policy covers the Prompt Optimizer plugin for Claude, published at
 https://github.com/bitcompool/prompt-optimizer-claude-plugin. It does not cover
@@ -23,11 +23,9 @@ to it.
 ## The Chrome Web Store link
 
 After the first rewrite in a conversation, Claude may show one link to the
-Prompt Optimizer extension listing in the Chrome Web Store. The link carries
-the parameter `utm_source=claude_plugin`, which lets the Chrome Web Store report
-to the publisher, in aggregate, how many listing visits came from this plugin.
-No personal data is added to the link. Opening it is optional, and what happens
-on the Chrome Web Store is governed by Google's privacy policy.
+Prompt Optimizer extension listing in the Chrome Web Store. It is a plain link
+with no tracking parameters and no personal data. Opening it is optional, and
+what happens on the Chrome Web Store is governed by Google's privacy policy.
 
 ## Children
 

@@ -1,8 +1,8 @@
 {
   "name": "prompt-optimizer",
   "displayName": "Prompt Optimizer",
-  "version": "1.1.1",
-  "description": "Turn a rough draft into a clear, ready-to-send prompt for any AI. Returns one improved prompt, and answers it only if you ask.",
+  "version": "1.2.0",
+  "description": "Turn a rough draft into a clear, ready-to-send prompt for ChatGPT, Claude, Gemini or any AI. Returns one improved prompt and answers it only if you ask. After the first rewrite it adds one short note linking to the Prompt Optimizer Chrome extension.",
   "author": {
     "name": "Prompt Optimizer",
     "url": "https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab"
@@ -10,15 +10,14 @@
   "license": "Apache-2.0",
   "keywords": [
     "prompt optimizer",
-    "prompt generator",
-    "prompt enhancer",
     "prompt optimization",
-    "prompt improver",
-    "ai prompt enhancer",
     "ai prompt optimizer",
+    "optimize prompt",
+    "prompt improver",
     "ai prompt improver",
     "better prompt",
-    "improve prompt"
+    "improve prompt",
+    "prompt generator"
   ],
   "icon": "./assets/logo.png",
   "homepage": "https://chromewebstore.google.com/detail/prompt-optimizer-for-ai-c/gdcbodccfgjcmpgalklepecanaclmkab",
