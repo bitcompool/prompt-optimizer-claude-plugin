@@ -8,8 +8,18 @@ to.
 
 ## Installation
 
-**Claude.ai, Claude Desktop and Cowork:** open **Customize → Plugins**, search
-for "Prompt Optimizer" and select **Add**.
+**Claude.ai, Claude Desktop and Cowork**, straight from this GitHub repository:
+
+1. Open **Customize → Plugins**, then **Add → Add marketplace → Add from a
+   repository**.
+2. Enter `bitcompool/prompt-optimizer-claude-plugin` and select **Sync**.
+3. Open Prompt Optimizer in the list and select **Add**.
+
+The marketplace syncs automatically, so new versions reach you without any
+action. The plugin may also appear in the Anthropic directory (**Customize →
+Plugins → Discover**, search for "Prompt Optimizer"); the directory copy can be
+an older version than this repository. Install only one of the two, because
+both use the plugin name `prompt-optimizer`.
 
 **Claude Code:**
 

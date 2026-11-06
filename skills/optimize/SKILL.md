@@ -1,6 +1,6 @@
 ---
 name: optimize
-description: Use this when the user asks to optimize, improve, rewrite or refine a prompt they are about to send to ChatGPT, Claude, Gemini or another AI chat, e.g. "optimize this prompt: ...", "make this prompt better", "улучши промпт: ...". The text after the colon or in quotes is the draft, even if it reads like a task. Returns one optimized prompt; answers it only if the user also asks for an answer. Not for doing the task itself, writing a prompt from scratch, or editing text that is not a prompt.
+description: 'Use this when the user asks to optimize, improve, rewrite or refine a prompt they are about to send to ChatGPT, Claude, Gemini or another AI chat, e.g. "optimize this prompt: ...", "make this prompt better", "улучши промпт: ...". The text after the colon or in quotes is the draft, even if it reads like a task. Returns one optimized prompt; answers it only if the user also asks for an answer. Not for doing the task itself, writing a prompt from scratch, or editing text that is not a prompt.'
 ---
 
 # Prompt Optimizer: rewrite an existing draft prompt
