@@ -15,11 +15,12 @@ to.
 2. Enter `bitcompool/prompt-optimizer-claude-plugin` and select **Sync**.
 3. Open Prompt Optimizer in the list and select **Add**.
 
-The marketplace syncs automatically, so new versions reach you without any
-action. The plugin may also appear in the Anthropic directory (**Customize →
-Plugins → Discover**, search for "Prompt Optimizer"); the directory copy can be
-an older version than this repository. Install only one of the two, because
-both use the plugin name `prompt-optimizer`.
+The marketplace syncs on its own, but after a new release claude.ai may take a
+while to pick up the new version; if it hasn't appeared, open the marketplace
+and select **Sync**. The plugin may also appear in the Anthropic directory
+(**Customize → Plugins → Discover**, search for "Prompt Optimizer"); the
+directory copy can be an older version than this repository. Install only one
+of the two, because both use the plugin name `prompt-optimizer`.
 
 **Claude Code:**
 
